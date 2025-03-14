@@ -16,7 +16,6 @@ const Home = () => {
 // Styled Components
 const PageWrapperStyled = styled.div`
     width: 100%;
-    background-color: blue;
 `;
 
 const ImageStyled = styled.img`
