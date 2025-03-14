@@ -6,13 +6,15 @@
     --background-color: var(--white);
     --primary-color:rgb(155, 95, 39);
     --text-color: var(--black);
+
+    --font-main: "Carlito", sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Carlito", sans-serif;
+    font-family: var(--font-main);
     font-weight: 400;
     font-style: normal;
     color: var(--text-color);

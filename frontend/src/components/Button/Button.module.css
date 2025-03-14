@@ -1,3 +1,10 @@
 .button {
-    background-color: red;
+    width: 200px;
+    padding: .5rem 1rem;
+    font: var(--font-main);
+    font-size: 1rem;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+    background-color: transparent;
 }
