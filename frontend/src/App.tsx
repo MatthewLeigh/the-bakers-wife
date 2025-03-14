@@ -7,15 +7,12 @@ import routes from "./routes";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-// Global Styles
-import GlobalStyles from "./globalStyles";
 
-// App Layout
+
+// App
 function App() {
     return (
         <Router>
-            <GlobalStyles />
-
             <Header />
             <Routes>
                 {routes.map(({ path, component: Component }, index) => (

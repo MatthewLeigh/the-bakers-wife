@@ -1,20 +1,31 @@
+
 import React from "react";
 
+// Styling
+import styles from "./Button.module.css";
+
+// Props
 interface ButtonProps {
     text: string;
     route?: string;
     isFilled?: boolean;
     isBold?: boolean;
-}
+    isFullWidth?: boolean;
+};
 
+
+
+// Button
 const Button: React.FC<ButtonProps> = ({
     text,
-    route = "/",
+    route,
     isFilled = false,
-    isBold = false
+    isBold = false,
+    isFullWidth = false
 }) => {
     return (
         <button
+            className={styles.button}
         >
             {text}
         </button>

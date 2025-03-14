@@ -1,13 +1,22 @@
-import { Link } from "react-router-dom";
 
+// Routing
+import { Link } from "react-router-dom";
+import routes from "../routes";
+
+
+
+// Header
 const Header = () => {
     return (
         <nav>
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/menu">Menu</Link></li>
-                <li><Link to="/functions-and-events">Functions & Events</Link></li>
+                {routes.map(({ path, name }, index) => (
+                    <li key={index}>
+                        <Link to={path}>
+                            {name}
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </nav>
     );

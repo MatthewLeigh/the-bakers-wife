@@ -1,5 +1,5 @@
-import React from 'react'
 
+// Props
 interface HeroProps {
     image: string;
     title: string;
@@ -8,6 +8,9 @@ interface HeroProps {
     buttonRoute?: string;
 }
 
+
+
+// Hero
 const Title: React.FC<HeroProps> = ({
     image,
     title,
