@@ -1,16 +1,26 @@
+import styled from "styled-components";
 import Title from "../components/Title";
 
 const Home = () => {
     return (
-        <div>
+        <PageWrapperStyled>
             <Title text="Home Page" />
-            <p>Welcome to our website!</p>
-            <img
+            <ImageStyled
                 src="/images/the-bakers-wife-logo.png"
                 alt="The Baker's Wife Logo"
             />
-        </div>
+        </PageWrapperStyled>
     );
 };
+
+// Styled Components
+const PageWrapperStyled = styled.div`
+    width: 100%;
+    background-color: blue;
+`;
+
+const ImageStyled = styled.img`
+    width: 300px;
+`
 
 export default Home;

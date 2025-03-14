@@ -5,11 +5,17 @@ import routes from "./routes";
 
 // Components
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+// Global Styles
+import GlobalStyles from "./globalStyles";
 
 // App Layout
 function App() {
     return (
         <Router>
+            <GlobalStyles />
+
             <Header />
             <Routes>
                 {routes.map(({ path, component: Component }, index) => (
@@ -20,6 +26,7 @@ function App() {
                     />
                 ))}
             </Routes>
+            <Footer />
         </Router>
     );
 }
