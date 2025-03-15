@@ -1,6 +1,10 @@
 .componentWrapper {
-    width: 100%;
+    position: relative;
     height: 100vh;
+    max-height: 1000px;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
     background-size: cover;
     background-position: center;
     display: flex;

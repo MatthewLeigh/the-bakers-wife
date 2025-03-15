@@ -2,9 +2,14 @@
 // Styling
 import styles from "./KeyInfo.module.css"
 
+
+// Key Info
 const KeyInfo = () => {
     return (
-        <div>Key Info</div>
+        <div className={styles.componentWrapper}>
+
+
+        </div>
     )
 }
 
