@@ -1,0 +1,40 @@
+header {
+    background-color: var(--background-color-header);
+    transition: all .3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.atPageTop {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.internalWrapper {
+    margin: auto;
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img {
+    width: 100%;
+}
+
+nav {
+    margin: auto 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+}

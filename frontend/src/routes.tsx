@@ -1,7 +1,7 @@
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Menu from "./pages/Menu";
-import FunctionsAndEvents from "./pages/FunctionsAndEvents";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Menu from "./pages/Menu/Menu";
+import FunctionsAndEvents from "./pages/FunctionsAndEvents/FunctionsAndEvents";
 
 const routes = [
     {
