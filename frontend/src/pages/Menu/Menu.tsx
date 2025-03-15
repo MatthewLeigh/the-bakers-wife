@@ -1,7 +1,8 @@
 
 // Components
-import Hero from "components/Hero/Hero";
-
+import Hero from "components/Global/Hero/Hero";
+import PdfEmbed from "components/Menu/PdfEmbed/PdfEmbed";
+import Showcase from "components/Menu/Showcase/Showcase";
 
 
 // Menu
@@ -13,6 +14,8 @@ const Menu = () => {
                 title="Menu"
                 subtitle="This is the menu hero"
             />
+            <PdfEmbed />
+            <Showcase />
         </div>
     );
 };

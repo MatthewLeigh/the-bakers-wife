@@ -2,7 +2,7 @@
 import styles from "./Hero.module.css";
 
 // Components
-import Button from "components/Button/Button";
+import Button from "components/Global/Button/Button";
 
 // Props
 interface HeroProps {
