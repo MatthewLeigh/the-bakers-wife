@@ -15,12 +15,12 @@ const OurApproachAndFood = () => {
             <div className={styles.innerWrapper}>
                 <img
                     className={styles.img}
-                    src="/placeholder.jpg"
-                    alt="placeholder"
+                    src="images/best-coffee-in-melbourne.jpg"
+                    alt="Best Coffee in Melbourne"
                 />
                 <img
                     className={styles.img}
-                    src="/placeholder.jpg"
+                    src="/images/coffee-and-breakfast-bowl.jpg"
                     alt="placeholder"
                 />
                 <div className={styles.textWrapper}>
@@ -55,13 +55,13 @@ const OurApproachAndFood = () => {
                 </div>
                 <img
                     className={styles.img}
-                    src="/placeholder.jpg"
-                    alt="placeholder"
+                    src="/images/my-girlfriends-favourite-place-to-eat.jpg"
+                    alt="Delicious Food"
                 />
                 <img
                     className={styles.img}
-                    src="/placeholder.jpg"
-                    alt="placeholder"
+                    src="/images/best-restaurant-in-camberwell.jpg"
+                    alt="Best Restaurant in Camberwell"
                 />
             </div>
 

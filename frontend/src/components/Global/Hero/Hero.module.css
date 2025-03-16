@@ -13,3 +13,11 @@
     align-items: center;
     text-align: center;
 }
+
+.componentWrapper h1 {
+    color: var(--text-color-light);
+    margin-bottom: 24px;
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

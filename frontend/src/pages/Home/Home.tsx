@@ -14,8 +14,8 @@ const Home = () => {
     return (
         <div>
             <Hero
-                image="placeholder.jpg"
-                title="Home"
+                image="food.jpg"
+                title="Baked Goods, Baked Good."
                 subtitle="Button text"
                 isSubtitleButton={true}
                 buttonRoute="Menu"

@@ -1,4 +1,5 @@
-header {
+
+.componentWrapper {
     background-color: var(--background-color-header);
     transition: all .3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -14,27 +15,36 @@ header {
     box-shadow: none;
 }
 
-.internalWrapper {
+.innerWrapper {
     margin: auto;
     max-width: var(--max-width);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.img {
+.componentWrapper img {
     width: 100%;
 }
 
-nav {
+.componentWrapper nav {
     margin: auto 0;
 }
 
-ul {
+.componentWrapper ul {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-li {
+.componentWrapper li {
     list-style: none;
+    letter-spacing: .125rem;
+    font-size: .9rem;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }

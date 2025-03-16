@@ -12,6 +12,7 @@
 
     --text-color: var(--black);
     --text-color-subtle: var(--grey-dark);
+    --text-color-light: var(--grey-light);
 
     --border-color: var(--grey-dark);
 
@@ -67,7 +68,6 @@ main {
 }
 
 a {
-    color: var(--highlight-primary);
     text-decoration: none;
 }
 
@@ -82,4 +82,10 @@ p {
     text-align: justify;
     letter-spacing: .15rem;
     font-size: .9rem;
+}
+
+.shortSpacer {
+    border: 1px solid var(--highlight-primary);
+    width: 64px;
+    padding: 0px 0;
 }

@@ -14,7 +14,7 @@ const MenuCarousel = () => {
                     <div className={styles.carouselWrapper}>
                         <img
                             className={styles.img}
-                            src="placeholder.jpg"
+                            src="images/french-toast.jpg"
                             alt="placeholder"
                         />
                     </div>
@@ -23,7 +23,7 @@ const MenuCarousel = () => {
                     <div className={styles.animationWrapper}>
                         <img
                             className={styles.img}
-                            src="placeholder.jpg"
+                            src="the-bakers-wife-animation.svg"
                             alt="placeholder"
                         />
                     </div>
@@ -36,13 +36,14 @@ const MenuCarousel = () => {
                     {/* Item Name */}
                     <p className={styles.itemName}>
                         <strong>
-                            Australian Prawn & Clam Pasta
+                            French Toast
                         </strong>
                     </p>
 
                     {/* Item Description */}
                     <p className={styles.itemDescription}>
-                        taglierini, white wine, garlic, chilli, evoo, cherry tomatoes & parsley
+                        challah, lemon curd, berries, poached pear, burnt mascarpone, pistachio
+                        praline & pure maple syrup.
                     </p>
 
                 </div>

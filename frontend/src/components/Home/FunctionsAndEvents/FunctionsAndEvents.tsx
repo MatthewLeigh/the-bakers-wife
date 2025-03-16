@@ -24,27 +24,27 @@ const FunctionsAndEvents = () => {
             <div className={styles.imgWrapper}>
                 <img
                     className={styles.img}
-                    src="placeholder.jpg"
+                    src="images/delicious-food.jpg"
                     alt="placeholder"
                 />
                 <img
                     className={styles.img}
-                    src="placeholder.jpg"
+                    src="images/wedding-location.jpg"
                     alt="placeholder"
                 />
                 <img
                     className={styles.img}
-                    src="placeholder.jpg"
+                    src="images/world-class-service.jpg"
                     alt="placeholder"
                 />
                 <img
                     className={styles.img}
-                    src="placeholder.jpg"
+                    src="images/function-space.jpg"
                     alt="placeholder"
                 />
                 <img
                     className={styles.img}
-                    src="placeholder.jpg"
+                    src="images/best-food-in-melbourne.jpg"
                     alt="placeholder"
                 />
             </div>
