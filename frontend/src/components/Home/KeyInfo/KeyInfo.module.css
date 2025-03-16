@@ -1,7 +1,6 @@
 
 .componentWrapper {
     position: relative;
-
     background-color: var(--background-color-secondary);
     padding: var(--minor-gap) 0;
     width: 100vw;
