@@ -3,7 +3,7 @@
     margin-top: var(--major-gap);
     position: relative;
     background-color: var(--background-color-highlight);
-    padding: var(--minor-gap) 0;
+    padding: var(--major-gap) 0;
     width: 100vw;
     left: 50%;
     transform: translateX(-50%);
