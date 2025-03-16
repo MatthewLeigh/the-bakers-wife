@@ -1,0 +1,39 @@
+
+.componentWrapper {
+    margin-top: var(--major-gap);
+    display: flex;
+    flex-direction: column;
+    gap: var(--image-gap);
+}
+
+.showcase {
+    display: flex;
+    flex-direction: row;
+    gap: var(--image-gap);
+}
+
+.showcase .textWrapper,
+.showcase .imageWrapper {
+    flex: 1;
+}
+
+.imageWrapper img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.textWrapper {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textWrapper p {
+    flex: 1;
+    margin-top: .5rem;
+}
+
+.textRight {
+    align-items: right;
+    text-align: right;
+}

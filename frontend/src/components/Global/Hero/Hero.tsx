@@ -26,16 +26,18 @@ const Title: React.FC<HeroProps> = ({
             className={styles.componentWrapper}
             style={{ backgroundImage: `url(images/hero/${image})` }}
         >
-            <h1>{title}</h1>
-            {isSubtitleButton ? (
-                <Button
-                    text={subtitle ? subtitle : ""}
-                    isBold={true}
-                    route={buttonRoute}
-                />
-            ) : (
-                <h2>{subtitle}</h2>
-            )}
+            <div className="hidden">
+                <h1>{title}</h1>
+                {isSubtitleButton ? (
+                    <Button
+                        text={subtitle ? subtitle : ""}
+                        isBold={true}
+                        route={buttonRoute}
+                    />
+                ) : (
+                    <h2>{subtitle}</h2>
+                )}
+            </div>
         </div>
     )
 }

@@ -53,9 +53,9 @@
 }
 
 .infoBlock:nth-child(2) {
-    transition-delay: 300ms;
+    transition-delay: 200ms;
 }
 
 .infoBlock:nth-child(3) {
-    transition-delay: 600ms;
+    transition-delay: 400ms;
 }

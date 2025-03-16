@@ -3,13 +3,24 @@ export const hiddenObserver = () => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-            }
-            else {
+            } else {
                 entry.target.classList.remove('show');
             }
         });
     });
 
-    const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((el) => observer.observe(el));
+    const observeElements = () => {
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    };
+
+    // Observe elements on initial load
+    observeElements();
+
+    // Watch for new elements being added to the DOM
+    const mutationObserver = new MutationObserver(() => {
+        observeElements();
+    });
+
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
 };

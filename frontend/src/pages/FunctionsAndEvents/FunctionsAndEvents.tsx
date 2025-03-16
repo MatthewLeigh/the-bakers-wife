@@ -12,8 +12,8 @@ const FunctionsAndEvents = () => {
     <div>
         <Hero
             image="placeholder.jpg"
-            title="Functions and Events"
-            subtitle="This is the Functions and Events hero"
+            title="Private & Corporate Events"
+            subtitle="at The Baker's Wife"
         />
         <Showcase />
         <OurPackages />

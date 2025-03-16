@@ -1,7 +1,9 @@
 export const shiftSidewaysObserver = () => {
-    const elements = document.querySelectorAll(".shiftSideways");
+    let elements = document.querySelectorAll(".shiftSideways");
 
     if (elements.length === 0) return;
+
+    const elementStates = new Map();
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -13,9 +15,12 @@ export const shiftSidewaysObserver = () => {
         });
     }, { threshold: 0.01 });
 
-    elements.forEach((el) => observer.observe(el));
+    const observeElements = () => {
+        elements = document.querySelectorAll(".shiftSideways");
+        elements.forEach((el) => observer.observe(el));
+    };
 
-    const elementStates = new Map(); // Store animation states
+    observeElements(); // Initial observation
 
     const lerp = (start, end, factor) => start + (end - start) * factor;
 
@@ -27,13 +32,11 @@ export const shiftSidewaysObserver = () => {
             let state = elementStates.get(element);
             if (!state) return;
 
-            // Progress is based on how far the element is within the viewport (0 at bottom, 1 at top)
             let progress = Math.max(0, Math.min(1, 1 - rect.top / viewportHeight));
-            let maxMove = 80;
+            let maxMove = 40; // Smaller movements for subtle effect
             state.targetX = (progress - 0.5) * maxMove * 2;
 
-            // Apply easing using lerp with a slightly higher factor for smoother feel
-            state.currentX = lerp(state.currentX, state.targetX, 0.05); // Faster catch-up
+            state.currentX = lerp(state.currentX, state.targetX, 0.1); // Smooth easing
 
             element.style.transform = `translateX(calc(-50% + ${state.currentX}px))`;
         });
@@ -42,4 +45,11 @@ export const shiftSidewaysObserver = () => {
     };
 
     requestAnimationFrame(updatePositions);
+
+    // 🔄 Reinitialize observers when navigating in React
+    if (typeof window !== "undefined") {
+        window.addEventListener("load", observeElements);
+        window.addEventListener("popstate", observeElements); // Detect back/forward navigation
+        window.addEventListener("hashchange", observeElements); // For hash-based routing
+    }
 };

@@ -10,7 +10,7 @@ const KeyInfo = () => {
             <div className={styles.innerWrapper}>
 
                 {/* Location */}
-                <div className={styles.textBlockWrapper}>
+                <div className={`${styles.textBlockWrapper} hidden`}>
                     <p><strong>Close to Home</strong></p>
                     <div className={styles.lowerText}>
                         <p>414 - 418 Burke Road</p>
@@ -18,7 +18,7 @@ const KeyInfo = () => {
                     </div>
                 </div>
                 {/* Opening Hours */}
-                <div className={styles.textBlockWrapper}>
+                <div className={`${styles.textBlockWrapper} hidden`}>
                     <p><strong>Open 7 Days</strong></p>
                     <div className={styles.lowerText}>
                         <p>7:30am - 3pm Weekdays</p>
@@ -26,7 +26,7 @@ const KeyInfo = () => {
                     </div>
                 </div>
                 {/* Contact Info */}
-                <div className={styles.textBlockWrapper}>
+                <div className={`${styles.textBlockWrapper} hidden`}>
                     <p><strong>Get In Touch</strong></p>
                     <div className={styles.lowerText}>
                         <p>info@thebakerswife.com.au</p>
