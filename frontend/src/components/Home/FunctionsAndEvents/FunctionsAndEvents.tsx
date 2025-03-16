@@ -21,7 +21,7 @@ const FunctionsAndEvents = () => {
             </div>
 
             {/* Image Wrapper */}
-            <div className={styles.imgWrapper}>
+            <div className={`${styles.imgWrapper} shiftSideways`}>
                 <img
                     className={styles.img}
                     src="images/delicious-food.jpg"
