@@ -12,8 +12,8 @@ const FunctionsAndEvents = () => {
 
             {/* Text Wrapper */}
             <div className={styles.textWrapper}>
-                <h2>Functions & Events</h2>
-                <p>
+                <h2 className="hidden">Functions & Events</h2>
+                <p className="hidden">
                     From bat mitsvas, to weddings, to corporate events, we have an unrivalled event
                     space for any occasion. From bat mitsvas, to weddings, to corporate events, we
                     have an unrivalled event space for any occasion.
@@ -50,7 +50,7 @@ const FunctionsAndEvents = () => {
             </div>
 
             {/* Button */}
-            <div className={styles.buttonWrapper}>
+            <div className={`${styles.buttonWrapper} hidden`}>
                 <Button
                     text="The Full Package"
                 />

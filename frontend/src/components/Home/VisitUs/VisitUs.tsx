@@ -14,19 +14,19 @@ const VisitUs = () => {
                 <div className={styles.textWrapper}>
 
                     {/* Heading */}
-                    <h2>Visit Us</h2>
+                    <h2 className="hidden">Visit Us</h2>
 
                     {/* Info Blocks */}
                     <div className={styles.infoBlockWrapper}>
 
                         {/* Where */}
-                        <div className={styles.infoBlock}>
+                        <div className={`${styles.infoBlock} hidden`}>
                             <p><strong>Where</strong></p>
                             <p>414 - 418 Burke Road</p>
                             <p>Camberwell, Vic 3124</p>
                         </div>
                         {/* When */}
-                        <div className={styles.infoBlock}>
+                        <div className={`${styles.infoBlock} hidden`}>
                             <p><strong>When</strong></p>
                             <p>7:30am - 3pm Weekdays</p>
                             <p>8am - 3pm Weekends</p>
@@ -35,7 +35,7 @@ const VisitUs = () => {
                     </div>
 
                     {/* Button */}
-                    <div className={styles.buttonWrapper}>
+                    <div className={`${styles.buttonWrapper} button`}>
                         <Button
                             text="Book Now"
                         />

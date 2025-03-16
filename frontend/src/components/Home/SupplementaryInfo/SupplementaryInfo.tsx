@@ -10,7 +10,7 @@ const SupplementaryInfo = () => {
             <div className={styles.innerWrapper}>
 
                 {/* One */}
-                <div className={styles.infoBlock}>
+                <div className={`${styles.infoBlock} hidden`}>
                     <div className={styles.imgWrapper}>
                         <img
                             className={styles.img}
@@ -27,7 +27,7 @@ const SupplementaryInfo = () => {
                 </div>
 
                  {/* Two */}
-                 <div className={styles.infoBlock}>
+                <div className={`${styles.infoBlock} hidden`}>
                     <div className={styles.imgWrapper}>
                         <img
                             className={styles.img}
@@ -44,7 +44,7 @@ const SupplementaryInfo = () => {
                 </div>
 
                  {/* Three */}
-                 <div className={styles.infoBlock}>
+                <div className={`${styles.infoBlock} hidden`}>
                     <div className={styles.imgWrapper}>
                         <img
                             className={styles.img}
