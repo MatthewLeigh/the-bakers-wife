@@ -11,7 +11,7 @@ const FunctionsAndEvents = () => {
   return (
     <div>
         <Hero
-            image="placeholder.jpg"
+            image="world-class-service.jpg"
             title="Private & Corporate Events"
             subtitle="at The Baker's Wife"
         />

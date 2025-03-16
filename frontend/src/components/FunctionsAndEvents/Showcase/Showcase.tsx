@@ -20,7 +20,7 @@ const Showcase = () => {
                 </div>
                 <div className={styles.imageWrapper}>
                     <img
-                        src="placeholder.jpg"
+                        src="images/meeting-room.jpg"
                         alt="Placeholder"
                     />
                 </div>
@@ -30,7 +30,7 @@ const Showcase = () => {
             <div className={`${styles.showcase} ${styles.textRight}`}>
                 <div className={styles.imageWrapper}>
                     <img
-                        src="placeholder.jpg"
+                        src="images/experience.jpg"
                         alt="Placeholder"
                     />
                 </div>
@@ -60,7 +60,7 @@ const Showcase = () => {
                 </div>
                 <div className={styles.imageWrapper}>
                     <img
-                        src="placeholder.jpg"
+                        src="images/wedding-location.jpg"
                         alt="Placeholder"
                     />
                 </div>

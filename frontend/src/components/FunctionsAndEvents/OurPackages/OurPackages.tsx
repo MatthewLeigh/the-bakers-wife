@@ -39,7 +39,7 @@ const OurPackages = () => {
                     <div className={styles.imageCarousel}>
                         <div className={styles.imageWrapper}>
                             <img
-                                src="placeholder.jpg"
+                                src="images/full-table.jpg"
                                 alt="Placeholder"
                             />
                         </div>
@@ -56,7 +56,7 @@ const OurPackages = () => {
                     <div className={styles.imageCarousel}>
                         <div className={styles.imageWrapper}>
                             <img
-                                src="placeholder.jpg"
+                                src="images/best-restaurant-in-camberwell.jpg"
                                 alt="Placeholder"
                             />
                         </div>

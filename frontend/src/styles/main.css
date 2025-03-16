@@ -15,8 +15,9 @@
     --text-color-light: var(--grey-light);
 
     --border-color: var(--grey-dark);
+    --border-form-color: var(--grey);
 
-    --highlight-primary: var(--orange);
+    --highlight-primary: var(--orange-bold);
     --highlight-secondary: var(--blue);
 
 
