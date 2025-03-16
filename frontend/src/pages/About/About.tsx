@@ -11,9 +11,9 @@ const About = () => {
     return (
         <div>
             <Hero
-                image="placeholder.jpg"
-                title="About"
-                subtitle="This is the About hero"
+                image="counter.jpg"
+                title="Our Story"
+                subtitle="The Baker and the Baker's Wife"
             />
             <Story />
             <Quote />

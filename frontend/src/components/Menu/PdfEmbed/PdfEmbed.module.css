@@ -1,0 +1,12 @@
+.componentWrapper {
+    margin-top: var(--major-gap);
+    width: 100%;
+}
+
+.componentWrapper iframe {
+    width: 100%;
+    aspect-ratio: 1.41421 / 1;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}

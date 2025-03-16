@@ -23,6 +23,10 @@
     gap: var(--image-gap);
 }
 
+.titleWrapper {
+    text-align: center;
+}
+
 .textWrapper {
     flex: 45;
 }

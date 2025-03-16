@@ -4,7 +4,12 @@ import styles from "./PdfEmbed.module.css"
 
 const PdfEmbed = () => {
     return (
-        <div>Pdf Embed</div>
+        <div className={styles.componentWrapper}>
+            <iframe
+                title="Menu"
+                src="/menu/menu.pdf"
+            ></iframe>
+        </div>
     )
 }
 

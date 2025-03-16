@@ -12,8 +12,8 @@ const OurPackages = () => {
 
                 {/* Title */}
                 <div className={styles.titleWrapper}>
-                    <h2>Our Packages</h2>
-                    <p>
+                    <h2 className="hidden">Our Packages</h2>
+                    <p className="hidden">
                         From bat mitsvas, to weddings, to corporate events, we have an unrivalled
                         event space for any occasion. From bat mitsvas, to weddings, to corporate
                         events, we have an unrivalled event space for any occasion.
@@ -21,7 +21,7 @@ const OurPackages = () => {
                 </div>
 
                 {/* Standing Event */}
-                <div className={`${styles.packageWrapper} ${styles.textLeft}`}>
+                <div className={`${styles.packageWrapper} ${styles.textLeft} hidden`}>
 
                     {/* Text */}
                     <div className={styles.textWrapper}>
@@ -50,7 +50,7 @@ const OurPackages = () => {
                 </div>
 
                 {/* Standing Event */}
-                <div className={`${styles.packageWrapper} ${styles.textRight}`}>
+                <div className={`${styles.packageWrapper} ${styles.textRight} hidden`}>
 
                     {/* Images */}
                     <div className={styles.imageCarousel}>
@@ -81,7 +81,7 @@ const OurPackages = () => {
                 </div>
 
                 {/* Full Package Details */}
-                <div className={styles.packageDetailsWrapper}>
+                <div className={`${styles.packageDetailsWrapper} hidden`}>
                     <div className={styles.arrow}>Arrow</div>
                     <Button
                         text="Package Details"

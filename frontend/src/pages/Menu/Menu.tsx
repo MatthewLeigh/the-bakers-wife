@@ -10,9 +10,9 @@ const Menu = () => {
     return (
         <div>
             <Hero
-                image="placeholder.jpg"
-                title="Menu"
-                subtitle="This is the menu hero"
+                image="muffins.jpg"
+                title="All Day Menu"
+                subtitle="There's always time for dessert!"
             />
             <PdfEmbed />
             <Showcase />

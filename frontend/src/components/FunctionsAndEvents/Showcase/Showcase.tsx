@@ -7,7 +7,7 @@ const Showcase = () => {
         <div className={styles.componentWrapper}>
 
             {/* Showcase 1 */}
-            <div className={`${styles.showcase} ${styles.textLeft}`}>
+            <div className={`${styles.showcase} ${styles.textLeft} hidden`}>
                 <div className={styles.textWrapper}>
                     <h2>An Incredible Space</h2>
                     <p>
@@ -27,7 +27,7 @@ const Showcase = () => {
             </div>
 
             {/* Showcase 2 */}
-            <div className={`${styles.showcase} ${styles.textRight}`}>
+            <div className={`${styles.showcase} ${styles.textRight} hidden`}>
                 <div className={styles.imageWrapper}>
                     <img
                         src="images/experience.jpg"
@@ -48,7 +48,7 @@ const Showcase = () => {
             </div>
 
             {/* Showcase 3 */}
-            <div className={`${styles.showcase} ${styles.textLeft}`}>
+            <div className={`${styles.showcase} ${styles.textLeft} hidden`}>
                 <div className={styles.textWrapper}>
                     <h2>A Package for Every Occasion</h2>
                     <p>
