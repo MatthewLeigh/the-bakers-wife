@@ -1,4 +1,5 @@
 .componentWrapper {
+    margin-top: var(--major-gap);
     position: relative;
     background-color: var(--background-color-secondary);
     padding: var(--major-gap) 0;
