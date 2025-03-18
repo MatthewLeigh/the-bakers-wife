@@ -1,8 +1,4 @@
 
-:root {
-    --gap: 40px;
-}
-
 .componentWrapper {
     margin-top: var(--major-gap);
     display: flex;
