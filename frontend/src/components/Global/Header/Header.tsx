@@ -39,7 +39,9 @@ const Header = () => {
                 <nav>
                     <ul>
                         {routes.map(({ path, name }, index) => (
-                            <li key={index}>
+                            <li
+                                key={index}
+                            >
                                 <Link
                                     to={path}
                                     onClick={() => window.scrollTo(0, 0)}

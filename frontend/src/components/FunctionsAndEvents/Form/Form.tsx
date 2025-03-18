@@ -4,7 +4,7 @@ import styles from "./Form.module.css"
 
 const Form = () => {
     return (
-        <div className={styles.componentWrapper}>
+        <div className={`${styles.componentWrapper} hidden`}>
             <h2>Starting Planning Your Experience, Today!</h2>
             <p>
                 One click is all it takes! Our Events Team will reach out within 48 hours to answer
