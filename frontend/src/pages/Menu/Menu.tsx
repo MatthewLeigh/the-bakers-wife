@@ -10,7 +10,7 @@ const Menu = () => {
     return (
         <div>
             <Hero
-                image="muffins.jpg"
+                image="breadsticks.jpg"
                 title="All Day Menu"
                 subtitle="There's always time for dessert!"
             />
