@@ -91,13 +91,13 @@ const MenuCarousel = () => {
                     <div className={styles.navigationWrapper}>
                         <img
                             className={styles.navigationIcon}
-                            src="images/icons/arrow-left.svg"
+                            src="images/icons/arrow-left-white.svg"
                             alt="Previous"
                             onClick={decreaseIndex}
                         />
                         <img
                             className={styles.navigationIcon}
-                            src="images/icons/arrow-right.svg"
+                            src="images/icons/arrow-right-white.svg"
                             alt="Next"
                             onClick={increaseIndex}
                         />
