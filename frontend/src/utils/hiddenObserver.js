@@ -4,9 +4,9 @@ export const hiddenObserver = () => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
             }
-            // else {
-            //     entry.target.classList.remove('show');
-            // }
+            else {
+                entry.target.classList.remove('show');
+            }
         });
     });
 
@@ -15,10 +15,8 @@ export const hiddenObserver = () => {
         hiddenElements.forEach((el) => observer.observe(el));
     };
 
-    // Observe elements on initial load
     observeElements();
 
-    // Watch for new elements being added to the DOM
     const mutationObserver = new MutationObserver(() => {
         observeElements();
     });

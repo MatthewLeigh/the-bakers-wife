@@ -13,16 +13,45 @@
     margin-top: var(--major-gap);
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    height: 300px;
+    justify-content: left;
+    gap: 16px;
+    height: 240px;
     position: relative;
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    overflow: hidden;
+}
+
+.imgWrapper::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 15%;
+    background: linear-gradient(to right, var(--background-color-primary), transparent);
+}
+
+.imgWrapper::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    width: 15%;
+    background: linear-gradient(to left, var(--background-color-primary), transparent);
+}
+
+.imgTrack {
+    display: flex;
+    gap: 16px;
+    animation: scrollImages 15s linear infinite;
+    width: min-content;
 }
 
 .img {
+    flex: 0 0 auto;
     border-radius: var(--border-radius);
 }
 
@@ -30,4 +59,13 @@
     margin-top: var(--major-gap);
     display: flex;
     justify-content: center;
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }

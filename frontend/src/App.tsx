@@ -12,7 +12,6 @@ import Footer from "./components/Global/Footer/Footer";
 
 // Utils
 import { hiddenObserver } from "./utils/hiddenObserver.js";
-import { shiftSidewaysObserver } from "./utils/shiftSidewaysObserver.js";
 
 
 // App
@@ -20,8 +19,6 @@ function App() {
 
     useEffect(() => {
         hiddenObserver();
-        shiftSidewaysObserver();
-
     }, []);
 
     return (
