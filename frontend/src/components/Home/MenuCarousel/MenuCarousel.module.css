@@ -40,6 +40,18 @@
 .carouselWrapper .img {
     min-height: 100%;
     min-width: 100%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    position: relative;
+}
+
+.carouselWrapper .next {
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.carouselWrapper .prev {
+    transform: translateX(-50px);
+    opacity: 0;
 }
 
 
@@ -63,10 +75,54 @@
     margin-top: 16px;
     letter-spacing: .375rem;
     color: var(--text-color-subtle);
+    height: 2.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .bottomRowWrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.navigationWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.navigationIcon {
+    width: 32px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.navigationIcon:hover {
+    opacity: 1;
+}
+
+.delimiterWrapper {
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.delimiter {
+    width: 16px;
+    height: 16px;
+    background-color: var(--white);
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.currentDelimiter {
+    width: 80px;
+    opacity: 1;
 }

@@ -1,8 +1,29 @@
 
+// Hooks
+import { useState } from "react";
+
 // Styling
 import styles from "./MenuCarousel.module.css"
 
+// Constants
+import { MenuShowcaseItems } from "constants/MenuShowcaseItems";
+import { delimiter } from "path";
+
+
+
 const MenuCarousel = () => {
+
+    const [menuItemIndex, setMenuItemIndex] = useState(0);
+
+    const increaseIndex = () => {
+        setMenuItemIndex((prevIndex) => (prevIndex + 1) % MenuShowcaseItems.length);
+    };
+
+    const decreaseIndex = () => {
+        setMenuItemIndex((prevIndex) => (prevIndex - 1 + MenuShowcaseItems.length) % MenuShowcaseItems.length);
+    };
+
+
     return (
         <div className={styles.componentWrapper}>
             <div className={styles.innerWrapper}>
@@ -14,8 +35,9 @@ const MenuCarousel = () => {
                     <div className={styles.carouselWrapper}>
                         <img
                             className={styles.img}
-                            src="images/french-toast.jpg"
-                            alt="placeholder"
+                            loading="lazy"
+                            src={`images/${MenuShowcaseItems[menuItemIndex].image}`}
+                            alt={MenuShowcaseItems[menuItemIndex].name}
                         />
                     </div>
 
@@ -23,6 +45,7 @@ const MenuCarousel = () => {
                     <div className={styles.animationWrapper}>
                         <img
                             className={styles.img}
+                            loading="lazy"
                             src="the-bakers-wife-animation.svg"
                             alt="placeholder"
                         />
@@ -36,14 +59,13 @@ const MenuCarousel = () => {
                     {/* Item Name */}
                     <p className={styles.itemName}>
                         <strong>
-                            French Toast
+                            {MenuShowcaseItems[menuItemIndex].name}
                         </strong>
                     </p>
 
                     {/* Item Description */}
                     <p className={styles.itemDescription}>
-                        challah, lemon curd, berries, poached pear, burnt mascarpone, pistachio
-                        praline & pure maple syrup.
+                        {MenuShowcaseItems[menuItemIndex].description}
                     </p>
 
                 </div>
@@ -53,12 +75,32 @@ const MenuCarousel = () => {
 
                     {/* Delimiter */}
                     <div className={styles.delimiterWrapper}>
-                        Delimiter
+                        {MenuShowcaseItems.map((item, index) => (
+                            <div
+                                key={index}
+                                className={`
+                                    ${styles.delimiter}
+                                    ${index === menuItemIndex ? styles.currentDelimiter : ''}
+                                `}
+                                onClick={() => setMenuItemIndex(index)}
+                            ></div>
+                        ))}
                     </div>
 
                     {/* Buttons */}
                     <div className={styles.navigationWrapper}>
-                        Navigation
+                        <img
+                            className={styles.navigationIcon}
+                            src="images/icons/arrow-left.svg"
+                            alt="Previous"
+                            onClick={decreaseIndex}
+                        />
+                        <img
+                            className={styles.navigationIcon}
+                            src="images/icons/arrow-right.svg"
+                            alt="Next"
+                            onClick={increaseIndex}
+                        />
                     </div>
 
                 </div>
