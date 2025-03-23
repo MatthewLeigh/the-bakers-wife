@@ -5,6 +5,15 @@ import styles from "./OurPackages.module.css"
 // Components
 import Button from "components/Global/Button/Button"
 
+const downloadPDF = (): void => {
+    const link = document.createElement('a');
+    link.href = 'pdf/eventKit.pdf';
+    link.download = 'eventKit.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 const OurPackages = () => {
     return (
         <div className={styles.componentWrapper}>
@@ -83,9 +92,11 @@ const OurPackages = () => {
                 {/* Full Package Details */}
                 <div className={`${styles.packageDetailsWrapper} hidden`}>
                     <div className={styles.arrow}>Arrow</div>
-                    <Button
-                        text="Package Details"
-                    />
+                    <div className="downloadWrapper" onClick={downloadPDF}>
+                        <Button
+                            text="Package Details"
+                        />
+                    </div>
                 </div>
             </div>
         </div>

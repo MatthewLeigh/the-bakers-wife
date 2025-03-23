@@ -1,4 +1,7 @@
 
+// Routing
+import { Link } from "react-router-dom"
+
 // Styling
 import styles from "./Button.module.css";
 
@@ -15,8 +18,8 @@ interface ButtonProps {
 
 // Button
 const Button: React.FC<ButtonProps> = ({
-    text,
-    route,
+    text = "",
+    route = "",
     isFilled = false,
     isBold = false,
     isFullWidth = false
@@ -25,7 +28,12 @@ const Button: React.FC<ButtonProps> = ({
         <button
             className={styles.button}
         >
-            {text}
+            <Link
+                to={route}
+                onClick={() => window.scrollTo(0, 0)}
+            >
+                {text}
+            </Link>
         </button>
     );
 };

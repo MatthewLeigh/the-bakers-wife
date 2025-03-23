@@ -5,6 +5,9 @@ import styles from "./OurApproach.module.css"
 // Components
 import Button from "components/Global/Button/Button"
 
+// Constants
+import { ReservationAddress } from "constants/ReservationAddress"
+
 
 const OurApproach = () => {
     return (
@@ -41,6 +44,7 @@ const OurApproach = () => {
                         <div className={styles.buttonWrapper}>
                             <Button
                                 text="Book Now"
+                                route={ReservationAddress}
                             />
                         </div>
                     </div>

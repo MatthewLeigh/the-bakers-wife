@@ -8,6 +8,9 @@ import styles from "./OurApproachAndFood.module.css"
 // Components
 import Button from "components/Global/Button/Button"
 
+// Routing
+import routes from "routes";
+
 
 // Key Info
 const OurApproachAndFood = () => {
@@ -37,6 +40,7 @@ const OurApproachAndFood = () => {
                     <div className={`${styles.buttonWrapper} hidden`}>
                         <Button
                             text="The Full Menu"
+                            route="/menu"
                         />
                     </div>
                 </div>
@@ -54,6 +58,7 @@ const OurApproachAndFood = () => {
                     <div className={`${styles.buttonWrapper} hidden`}  id={styles.rightAlign}>
                         <Button
                             text="The Full Story"
+                            route="/about"
                         />
                     </div>
                 </div>

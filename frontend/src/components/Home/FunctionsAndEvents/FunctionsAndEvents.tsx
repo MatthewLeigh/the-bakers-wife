@@ -53,6 +53,7 @@ const FunctionsAndEvents = () => {
             <div className={`${styles.buttonWrapper} hidden`}>
                 <Button
                     text="The Full Package"
+                    route="/functions-and-events"
                 />
             </div>
 

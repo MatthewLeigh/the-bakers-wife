@@ -7,8 +7,11 @@ import routes from "routes";
 // Styling
 import styles from "./Header.module.css";
 
-//Components
+// Components
 import Button from '../Button/Button';
+
+// Constants
+import { ReservationAddress } from 'constants/ReservationAddress';
 
 
 // Header
@@ -63,6 +66,7 @@ const Header = () => {
                 <div className={styles.buttonWrapper}>
                     <Button
                         text="Book Table"
+                        route={ReservationAddress}
                     />
                 </div>
             </div>

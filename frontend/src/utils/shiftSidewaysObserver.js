@@ -20,7 +20,7 @@ export const shiftSidewaysObserver = () => {
         elements.forEach((el) => observer.observe(el));
     };
 
-    observeElements(); // Initial observation
+    observeElements();
 
     const lerp = (start, end, factor) => start + (end - start) * factor;
 
@@ -33,10 +33,10 @@ export const shiftSidewaysObserver = () => {
             if (!state) return;
 
             let progress = Math.max(0, Math.min(1, 1 - rect.top / viewportHeight));
-            let maxMove = 40; // Smaller movements for subtle effect
+            let maxMove = 40;
             state.targetX = (progress - 0.5) * maxMove * 2;
 
-            state.currentX = lerp(state.currentX, state.targetX, 0.1); // Smooth easing
+            state.currentX = lerp(state.currentX, state.targetX, 0.1);
 
             element.style.transform = `translateX(calc(-50% + ${state.currentX}px))`;
         });
@@ -46,10 +46,9 @@ export const shiftSidewaysObserver = () => {
 
     requestAnimationFrame(updatePositions);
 
-    // 🔄 Reinitialize observers when navigating in React
     if (typeof window !== "undefined") {
         window.addEventListener("load", observeElements);
-        window.addEventListener("popstate", observeElements); // Detect back/forward navigation
-        window.addEventListener("hashchange", observeElements); // For hash-based routing
+        window.addEventListener("popstate", observeElements);
+        window.addEventListener("hashchange", observeElements);
     }
 };

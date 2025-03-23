@@ -6,6 +6,9 @@ import styles from "./Footer.module.css"
 import { Link } from "react-router-dom";
 import routes from "routes";
 
+// Constants
+import { ReservationAddress } from "constants/ReservationAddress";
+
 
 const Footer = () => {
     return (
@@ -41,9 +44,7 @@ const Footer = () => {
                                 ))}
                                 <li>
                                     <Link
-                                        to={"https://www.sevenrooms.com/explore/thebakerswife/reservations/create/search"}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                        to={ReservationAddress}
                                     >
                                         Book Table
                                     </Link>

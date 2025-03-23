@@ -5,6 +5,10 @@ import styles from "./VisitUs.module.css"
 // Components
 import Button from "components/Global/Button/Button"
 
+// Constants
+import { ReservationAddress } from "constants/ReservationAddress"
+import { GoogleMapsAddress } from "constants/GoogleMapsAddress"
+
 const VisitUs = () => {
     return (
         <div className={styles.componentWrapper}>
@@ -38,6 +42,7 @@ const VisitUs = () => {
                     <div className={`${styles.buttonWrapper} button`}>
                         <Button
                             text="Book Now"
+                            route={ReservationAddress}
                         />
                     </div>
 
@@ -48,7 +53,7 @@ const VisitUs = () => {
                     <iframe
                         className={styles.map}
                         title="The Baker's Wife Camberwell Google Maps Embed"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.660889549825!2d145.05179007588674!3d-37.84482397196787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad641f4992c0d0f%3A0xa7a33eb291ca8b9f!2sThe%20Bakers%20Wife!5e0!3m2!1sen!2sau!4v1742088794704!5m2!1sen!2sau"
+                        src={GoogleMapsAddress}
                         loading="lazy"
                     />
                 </div>
