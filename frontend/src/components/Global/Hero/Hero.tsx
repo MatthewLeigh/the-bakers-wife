@@ -32,6 +32,7 @@ const Title: React.FC<HeroProps> = ({
                     <Button
                         text={subtitle ? subtitle : ""}
                         isBold={true}
+                        color="white"
                         route={buttonRoute}
                     />
                 ) : (

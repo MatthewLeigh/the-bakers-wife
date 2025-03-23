@@ -43,6 +43,7 @@ const VisitUs = () => {
                         <Button
                             text="Book Now"
                             route={ReservationAddress}
+                            color="primary"
                         />
                     </div>
 

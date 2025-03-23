@@ -10,3 +10,23 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+.isBold {
+    border-width: 2px;
+    font-weight: 600;
+}
+
+.black {
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+.white {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.primary {
+    color: var(--highlight-primary);
+    border-color: var(--highlight-primary);
+}

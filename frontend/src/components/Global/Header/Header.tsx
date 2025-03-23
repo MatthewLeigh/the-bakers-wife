@@ -67,6 +67,8 @@ const Header = () => {
                     <Button
                         text="Book Table"
                         route={ReservationAddress}
+                        isBold={true}
+                        color="primary"
                     />
                 </div>
             </div>

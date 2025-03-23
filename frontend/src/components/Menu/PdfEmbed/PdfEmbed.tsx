@@ -7,7 +7,7 @@ const PdfEmbed = () => {
         <div className={styles.componentWrapper}>
             <iframe
                 title="Menu"
-                src="/menu/menu.pdf"
+                src="/pdf/menu.pdf"
             ></iframe>
         </div>
     )

@@ -9,9 +9,10 @@ import styles from "./Button.module.css";
 interface ButtonProps {
     text: string;
     route?: string;
-    isFilled?: boolean;
+    downloadFileAddress?: string;
+    downloadFileName?: string;
     isBold?: boolean;
-    isFullWidth?: boolean;
+    color?: 'black' | 'white' | 'primary';
 };
 
 
@@ -20,22 +21,43 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({
     text = "",
     route = "",
-    isFilled = false,
+    downloadFileAddress = "",
+    downloadFileName = "",
     isBold = false,
-    isFullWidth = false
+    color = 'black'
 }) => {
     return (
-        <button
-            className={styles.button}
-        >
-            <Link
-                to={route}
-                onClick={() => window.scrollTo(0, 0)}
-            >
-                {text}
-            </Link>
-        </button>
+        <>
+            {route ? (
+                <Link
+                    to={route}
+                    onClick={() => window.scrollTo(0, 0)}
+                >
+                    <button className={`
+                        ${styles.button}
+                        ${isBold ? styles.isBold : ''}
+                        ${styles[color]}
+                    `}>
+                        {text}
+                    </button>
+                </Link>
+            ) : (
+                <a
+                    href={downloadFileAddress}
+                    download={downloadFileName}
+                >
+                    <button className={`
+                        ${styles.button}
+                        ${isBold ? styles.isBold : ''}
+                        ${styles[color]}
+                    `}>
+                        {text}
+                    </button>
+                </a>
+            )}
+        </>
     );
 };
+
 
 export default Button;
