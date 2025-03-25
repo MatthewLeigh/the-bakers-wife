@@ -58,7 +58,7 @@ const Header = () => {
 
                 {/* Logo */}
                 <img
-                    src="/images/the-bakers-wife-logo.png"
+                    src="images/the-bakers-wife-logo.png"
                     alt="The Baker's Wife Logo"
                 />
 
