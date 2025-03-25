@@ -21,7 +21,7 @@ const OurApproachAndFood = () => {
                 />
                 <img
                     className="hidden"
-                    src="/images/coffee-and-breakfast-bowl.jpg"
+                    src="images/coffee-and-breakfast-bowl.jpg"
                     alt="placeholder"
                 />
                 <div className={`${styles.textWrapper}`}>
@@ -58,12 +58,12 @@ const OurApproachAndFood = () => {
                 </div>
                 <img
                     className="hidden"
-                    src="/images/my-girlfriends-favourite-place-to-eat.jpg"
+                    src="images/my-girlfriends-favourite-place-to-eat.jpg"
                     alt="Delicious Food"
                 />
                 <img
                     className="hidden"
-                    src="/images/best-restaurant-in-camberwell.jpg"
+                    src="images/best-restaurant-in-camberwell.jpg"
                     alt="Best Restaurant in Camberwell"
                 />
             </div>
