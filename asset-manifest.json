@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/the-bakers-wife/static/css/main.e79b931c.css",
+    "main.js": "/the-bakers-wife/static/js/main.a223d0af.js",
+    "index.html": "/the-bakers-wife/index.html",
+    "main.e79b931c.css.map": "/the-bakers-wife/static/css/main.e79b931c.css.map",
+    "main.a223d0af.js.map": "/the-bakers-wife/static/js/main.a223d0af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e79b931c.css",
+    "static/js/main.a223d0af.js"
+  ]
+}
