@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 // Routing
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import routes from "./routes";
 
 // Components
@@ -22,7 +22,7 @@ function App() {
     }, []);
 
     return (
-        <Router>
+        <BrowserRouter basename="/the-bakers-wife">
                 <Header />
                 <main>
                     <Routes>
@@ -36,7 +36,7 @@ function App() {
                     </Routes>
                 </main>
                 <Footer />
-        </Router>
+        </BrowserRouter>
     );
 }
 
