@@ -22,7 +22,7 @@ function App() {
     }, []);
 
     return (
-        <BrowserRouter basename="/the-bakers-wife">
+        <BrowserRouter basename="/the-bakers-wife/">
                 <Header />
                 <main>
                     <Routes>
