@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://matthewleigh.github.io/the-bakers-wife",
+  "homepage": "https://matthewleigh.github.io/the-bakers-wife/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
