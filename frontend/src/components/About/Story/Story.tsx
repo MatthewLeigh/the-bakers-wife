@@ -1,7 +1,4 @@
 
-// Hooks
-import { useState, useEffect } from "react";
-
 // Styling
 import styles from "./Story.module.css"
 

@@ -1,15 +1,9 @@
 
-// Hooks
-import { useState, useEffect } from "react";
-
 // Styling
 import styles from "./OurApproachAndFood.module.css"
 
 // Components
 import Button from "components/Global/Button/Button"
-
-// Routing
-import routes from "routes";
 
 
 // Key Info

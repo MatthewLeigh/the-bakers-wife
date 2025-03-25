@@ -7,8 +7,6 @@ import styles from "./MenuCarousel.module.css"
 
 // Constants
 import { MenuShowcaseItems } from "constants/MenuShowcaseItems";
-import { delimiter } from "path";
-
 
 
 const MenuCarousel = () => {
