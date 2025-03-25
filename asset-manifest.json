@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/the-bakers-wife/static/css/main.e79b931c.css",
-    "main.js": "/the-bakers-wife/static/js/main.1cdf3adf.js",
+    "main.js": "/the-bakers-wife/static/js/main.f83496d5.js",
     "index.html": "/the-bakers-wife/index.html",
     "main.e79b931c.css.map": "/the-bakers-wife/static/css/main.e79b931c.css.map",
-    "main.1cdf3adf.js.map": "/the-bakers-wife/static/js/main.1cdf3adf.js.map"
+    "main.f83496d5.js.map": "/the-bakers-wife/static/js/main.f83496d5.js.map"
   },
   "entrypoints": [
     "static/css/main.e79b931c.css",
-    "static/js/main.1cdf3adf.js"
+    "static/js/main.f83496d5.js"
   ]
 }
